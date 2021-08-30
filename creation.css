@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background: #263238;
+}
+
+.sticky {
+  background: #263238;
+  box-shadow: 0 3px 20px;
+}
+
+.sticky .logo {
+  color: #fb7369;
+}
+
+header .logo {
+  color: #fb7369;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.user {
+  padding: 6px;
+}
+
+.logout {
+  border-radius: 15px;
+  border: solid #ffffff;
+  margin-left: 15px;
+  padding: 5px;
+}
+
+.journal {
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  justify-content: center;
+}
+
+.journal-label {
+  display: block;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  color: lightcoral;
+}
+
+.title-div,
+.date-div {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.title,
+.date {
+  line-height: 1.6;
+  font-weight: 700;
+  width: 15em;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 2px;
+  border: unset;
+  background-color: lightgoldenrodyellow;
+  font-family: "Space Mono", monospace;
+  color: lightcoral;
+}
+
+.title,
+.date:focus {
+  outline-color: lightcoral;
+  font-family: "Space Mono", monospace;
+  color: lightcoral;
+}
+
+.title,
+.date::placeholder {
+  color: lightcoral;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+}
+
+.title,
+.date::-ms-value {
+  color: lightcoral;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+}
+
+input.image-btn {
+  position: relative;
+  background: lightcoral;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+.description > textarea {
+  width: 90%;
+  height: 20em;
+  margin: 1em auto;
+  margin-left: 10px;
+  padding: 1em;
+  border-radius: 2px;
+  border: unset;
+  background-color: #263238;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  .description > textarea {
+    width: 80em;
+    height: 30em;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 2px;
+    border: unset;
+    background-color: #263238;
+    font-family: "Space Mono", monospace;
+    color: #fff;
+  }
+}
+
+.description :focus {
+  outline-color: #030f14;
+  font-family: "Space Mono", monospace;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.description > textarea ::placeholder {
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+}
+
+.save {
+  color: lightgoldenrodyellow;
+  background-color: lightcoral;
+  display: block;
+  padding: 0.6rem 2rem;
+  transition: all 0.1s;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.save:hover {
+  background-color: lightgoldenrodyellow;
+  color: lightcoral;
+  font-weight: 700;
+  transform: scale(1.08);
+}

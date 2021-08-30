@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Diary</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Online Diary</a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu">
+        <li id="show-login" class="log"><a href="#">Log in</a></li>
+        <li id="show-signup" class="sign"><a href="#">Sign up</a></li>
+      </ul>
+    </header>
+    <section class="banner">
+      <div class="textBx">
+        <h1>Online Diary</h1>
+        <h3>
+          Your private, 100% customizable online journal.<br />
+          Loved by over 2 million writers around the world.
+        </h3>
+        <a href="#" class="btn btn-signup">Start Your Free Journal Now!</a>
+      </div>
+    </section>
+
+    <div class="popup-login">
+      <div class="close-btn">&times;</div>
+      <form class="form" action="config.php" method="POST">
+        <h2>Log in</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input
+            name="email"
+            type="text"
+            id="email"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input
+            name="password"
+            type="password"
+            id="password"
+            placeholder="Enter password"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <button name="login" type="submit">Log in</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="popup-signup">
+      <div class="close-btn">&times;</div>
+      <form
+        name="registration"
+        id="registration"
+        class="form"
+        action="validation.php"
+        method="POST"
+      >
+        <h2>Sign up</h2>
+        <div class="form-element">
+          <input
+            name="firstName"
+            type="text"
+            id="firstName"
+            placeholder="First Name"
+            required
+            pattern="[A-Za-z].{3,}"
+            title="Only letters"
+          />
+        </div>
+        <div class="form-element">
+          <input
+            name="lastName"
+            type="text"
+            id="lastName"
+            placeholder="Last Name"
+            required
+            pattern="[A-Za-z].{3,}"
+            title="Only letters"
+          />
+        </div>
+        <div class="form-element">
+          <input
+            name="email"
+            type="text"
+            id="email"
+            placeholder="Email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="characters@characters.domain"
+          />
+        </div>
+        <div class="form-element">
+          <input
+            name="password"
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+            pattern=".{8,}"
+            title="Eight or more characters"
+          />
+        </div>
+        <div class="form-element">
+          <input
+            name="cpassword"
+            type="password"
+            id="cpassword"
+            placeholder="Confirm password"
+            required
+            pattern=".{8,}"
+            title="Eight or more characters"
+          />
+        </div>
+        <div class="form-element">
+          <button class="create" type="submit" name="signin" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <section class="feature1">
+      <div class="heading">
+        <h2>Your Private Online Journal</h2>
+        <hr class="style-two" />
+      </div>
+      <div class="content">
+        <div class="contentBx w50">
+          <h3>Privacy is our #1 Concern</h3>
+          <p>
+            Even when carefully kept, paper journals can be read by anyone who
+            happens upon them.<br />
+            Online Diary keeps your journals safe so you can rest easy knowing
+            that your entries<br />
+            are secure in the Online Diary Vault.
+          </p>
+          <a href="#" class="btn btn-signup start1">Get Started</a>
+        </div>
+        <div class="w50">
+          <img src="img/Classic.svg" alt="Classic Diary" />
+        </div>
+      </div>
+    </section>
+
+    <section class="feature2">
+      <div class="content">
+        <div class="w50">
+          <img src="img/Online.svg" alt="Classic Diary" />
+        </div>
+        <div class="contentBx w50">
+          <h3>Write from Anywhere</h3>
+          <p>
+            Take your journals wherever you go with the Online Diary mobile apps
+            for iPhone, iPad,<br />
+            and Android phones and tablets.
+          </p>
+          <a href="#" class="btn btn-signup start2">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="heading">
+        <h2>Contact Us</h2>
+        <div class="content">
+          <div class="introduction">
+            <h3>Online Diary</h3>
+            <p>
+              Whether you’re looking for a tool to record your daily emotions
+              and activities in a reflective journal, keep track of milestones
+              in a food diary or pregnancy journal, or even record your dreams
+              in a dream journal, Online Diary has you covered. Online Diary
+              gives you all the tools you need to focus on the ideas you want to
+              preserve, rather than the process of writing itself.
+            </p>
+          </div>
+          <div class="contactInfo">
+            <h3>Contact Info</h3>
+            <div class="contactInfoBx">
+              <div class="box">
+                <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>Monastir, Tunisia</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Phone</h3>
+                  <p>+216-50684155</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="text">
+                  <h3>Email</h3>
+                  <p>miled.yassine7@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2021 Online Diary, Inc.</div>
+    </section>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var menu = document.querySelector(".menu");
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+      }
+
+      document
+        .querySelector("#show-login")
+        .addEventListener("click", function () {
+          document.querySelector(".popup-login").classList.add("active");
+        });
+      document
+        .querySelector(".popup-login .close-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".popup-login").classList.remove("active");
+        });
+
+      document
+        .querySelector("#show-signup")
+        .addEventListener("click", function () {
+          document.querySelector(".popup-signup").classList.add("active");
+        });
+
+      document
+        .querySelector(".btn-signup")
+        .addEventListener("click", function () {
+          document.querySelector(".popup-signup").classList.add("active");
+        });
+      document.querySelector(".start1").addEventListener("click", function () {
+        document.querySelector(".popup-signup").classList.add("active");
+      });
+      document.querySelector(".start2").addEventListener("click", function () {
+        document.querySelector(".popup-signup").classList.add("active");
+      });
+
+      document
+        .querySelector(".popup-signup .close-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".popup-signup").classList.remove("active");
+        });
+
+    </script>
+  </body>
+</html>
